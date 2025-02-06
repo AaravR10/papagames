@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWF Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ruffle/0.1.0/ruffle.min.js"></script>
+</head>
+<body>
+    <div id="flash-content"></div>
+    <script>
+        const ruffle = new Ruffle({
+            element: document.getElementById("flash-content"),
+            data: "papasdonuteria.swf",
+        });
+        ruffle.start();
+    </script>
+</body>
+</html>
